@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size10dp"
+        android:background="@color/gray"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tenmonan"
+            android:layout_weight="1"
+            android:textSize="@dimen/size18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/themsoluong"
+            android:layout_weight="1"
+            android:textSize="@dimen/size18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/giatien"
+            android:layout_weight="1"
+            android:textSize="@dimen/size18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gvThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:numColumns="1">
+
+    </GridView>
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tongtien"
+        android:textSize="@dimen/size18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thanhtoan"
+            android:backgroundTint="@color/colorMain"
+            android:layout_margin="@dimen/size10dp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnThoatThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thoat"
+            android:backgroundTint="@color/colorMain"
+            android:layout_margin="@dimen/size10dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>
